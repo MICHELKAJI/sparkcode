@@ -1,0 +1,19 @@
+import { NgClass } from '@angular/common';
+import { Component } from '@angular/core';
+
+
+@Component({
+  selector: 'app-header',
+  standalone: true,
+  imports: [ NgClass],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
+})
+export class HeaderComponent {
+  isHovered = false;
+  
+  // Fonction pour changer l'état de hover
+  toggleHover(state: boolean) {
+    this.isHovered = state;
+  }
+}
