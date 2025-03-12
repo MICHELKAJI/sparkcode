@@ -15,3 +15,83 @@
   .animate-spin-slower {
     animation: spin-slower 8s linear infinite;
   }
+
+  .team-section {
+    background-color: #0D1410;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  
+    h2 {
+      animation: fadeInUp 1s ease-out;
+    }
+  
+    .team-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .team-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #1F2937;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      z-index: 10;
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.1);
+        z-index: 20;
+      }
+    }
+  
+    .plus-sign {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      background-color: #10B981;
+      border: 3px solid #1F2937;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      z-index: 10;
+  
+      &:hover {
+        transform: scale(1.1) rotate(20deg);
+        z-index: 20;
+      }
+    }
+  
+    .cta-button {
+      background-color: #10B981;
+      color: #000;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #059669;
+        transform: scale(1.05);
+      }
+    }
+  
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fade-in {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  }
+  

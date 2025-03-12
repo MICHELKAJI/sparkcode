@@ -1,0 +1,31 @@
+<div class="profiles-section h-screen py-36 px-6 bg-[#0D1410] text-white">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-green-400 mb-4 animate-fade-in">
+        Our Talented Team
+      </h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        Get to know the minds behind Sparkcode’s success.
+      </p>
+    </div>
+  
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div *ngFor="let dev of developers" class="profile-card bg-[#1F2937] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+        <div class="photo-container relative overflow-hidden">
+          <img [src]="dev.photo" [alt]="dev.name" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-green-400 mb-2">{{ dev.name }}</h3>
+          <p class="text-gray-400 mb-4">{{ dev.title }}</p>
+          <div>
+            <h4 class="text-gray-300 text-sm mb-2">Tech Stack</h4>
+            <div class="flex flex-wrap gap-2">
+              <span *ngFor="let tech of dev.stack" class="stack-tag bg-green-500 text-black text-xs font-medium px-3 py-1 rounded-full">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
