@@ -1,0 +1,27 @@
+<div>
+    <div (click)="closeModal()"  class="fixed inset-0 z-50 flex  justify-start h-full w-full bg-black bg-opacity-50" [ngClass]="{'hidden': !isVisible}">
+      <div #modal  class= "bg-[#0f1e1e] w-full h-screen">
+        <div class="flex flex-row justify-between items-center p-5">
+            <div class="h-8 w-8"><img class="rounded-full" src="/images/logo.jpeg" alt=""></div>
+            <button 
+        (click)="closeModal()" 
+        class="absolute top-4 right-4 p-2 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        aria-label="Fermer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+        </div>
+        
+        <div class=" flex flex-col justify-between h-auto">
+            <ul class="text-white p-10 flex flex-col gap-5 mt-20 cursor-none">
+                <li routerLink="" (click)="closeModal()">Home</li>
+                <li routerLink="work" (click)="closeModal()">Projects</li>
+                <li routerLink="service" (click)="closeModal()">Services</li>
+                <li routerLink="team" (click)="closeModal()">Team</li>
+            </ul>
+            <div class="p-2"></div>
+        </div>
+      </div>
+    </div>
+</div>
