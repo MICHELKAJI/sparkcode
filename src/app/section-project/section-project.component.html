@@ -1,0 +1,48 @@
+<div class="min-h-screen bg-gray-900 text-white flex flex-col items-center px-8 py-20 border border-slate-800">
+  
+    <!-- Main Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">
+      Mon <span class="text-green-400">Portfolio</span>
+    </h1>
+  
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button
+        *ngFor="let category of ['Tous', 'Site Vitrine', 'Application Web', 'SaaS']"
+        (click)="filterProjects(category)"
+        [class.bg-green-600]="activeFilter === category"
+        class="px-4 py-2 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition"
+      >
+        {{ category }}
+      </button>
+    </div>
+  
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+      
+      <div 
+        *ngFor="let project of filteredProjects" 
+        class="project-card bg-gray-800 rounded-xl p-6 shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl"
+      >
+        <img 
+          [src]="project.image" 
+          [alt]="project.title" 
+          class="w-full h-40 object-cover rounded-md mb-4"
+        />
+  
+        <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
+        
+        <p class="text-sm text-gray-400 mb-4">Stack: {{ project.stack.join(', ') }}</p>
+  
+        <a 
+          [href]="project.link" 
+          target="_blank" 
+          class="inline-flex items-center px-4 py-2 bg-green-500 text-black font-medium rounded-lg shadow-lg hover:bg-green-400 transition"
+        >
+          Voir le site →
+        </a>
+      </div>
+  
+    </div>
+  </div>
+  

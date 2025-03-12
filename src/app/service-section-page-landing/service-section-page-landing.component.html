@@ -1,0 +1,79 @@
+<div
+  #container
+  class="bg-[url('/images/bckg.webp')] relative overflow-hidden bg-[#0D1410] text-white min-h-screen flex flex-col items-center justify-end font-sans gap-52"
+>
+  <!-- Background Raining Effect -->
+  <canvas
+    #rainCanvas
+    class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"
+  ></canvas>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center text-center px-4">
+    <div class="flex items-center space-x-2 mt-20"> <!-- Ajout de mt-20 pour descendre si header -->
+      <img
+        src="assets/flowtrix-logo.png"
+        alt="Flowtrix Logo"
+        class="w-8 h-8"
+      />
+      <h1 class="text-3xl md:text-4xl font-bold text-green-400">
+        Flowtrix <span class="text-green-600">Schema</span>
+      </h1>
+    </div>
+
+    <h2 class="text-4xl md:text-6xl font-extrabold mt-8 leading-tight">
+      Unlock the power of <span class="text-green-400">SEO</span> <br />
+      with Flowtrix Schema App
+    </h2>
+
+    <p class="text-gray-400 mt-4 text-lg max-w-2xl">
+      Make your website stand out in search results with structured data to
+      enhance visibility and traffic.
+    </p>
+
+    <div class="flex space-x-4 mt-8">
+      <button
+        class="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-xl shadow-xl transition-transform transform hover:scale-105"
+      >
+        Install Webflow App ➜
+      </button>
+      <button
+        class="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition"
+      >
+        Book a short call
+      </button>
+    </div>
+  </div>
+
+  <!-- Features Footer -->
+  <div
+    class="relative z-10 w-full flex justify-center py-6 mt-12 bg-gradient-to-t from-black/80"
+  >
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-white">
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>WebApplication Schema</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>Product Schema</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>Reviews Schema</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>Organisation Schema</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>Article Schema</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>✔️</span>
+        <span>Breadcrumbs Schema</span>
+      </div>
+    </div>
+  </div>
+</div>
