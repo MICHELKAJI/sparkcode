@@ -1,4 +1,4 @@
-<div class="min-h-screen bg-gray-900 text-white flex flex-col items-center px-8 py-20 border border-slate-800">
+<div class="min-h-screen  bg-gray-900 text-white flex flex-col items-center px-8 py-20 border border-slate-800">
   
     <!-- Main Title -->
     <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">
@@ -22,7 +22,7 @@
       
       <div 
         *ngFor="let project of filteredProjects" 
-        class="project-card bg-gray-800 rounded-xl p-6 shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl"
+        class="project-card bg-[url('/images/bckg.webp')] bg-bottom bg-cover bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl"
       >
         <img 
           [src]="project.image" 

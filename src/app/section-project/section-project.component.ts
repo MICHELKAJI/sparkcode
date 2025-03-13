@@ -15,15 +15,15 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
       title: 'Landing Page AI',
       category: 'Site Vitrine',
       stack: ['Next.js', 'Tailwind', 'GSAP'],
-      image: 'https://source.unsplash.com/400x300/?technology',
+      image: '/images/apeh.PNG',
       link: 'https://example.com'
     },
     {
       title: 'E-commerce Platform',
       category: 'Application Web',
       stack: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://source.unsplash.com/400x300/?ecommerce',
-      link: 'https://example.com'
+      image: '/images/style.PNG',
+      link: 'https://shope-theta.vercel.app/index.html'
     },
     {
       title: 'SaaS CRM',
@@ -36,15 +36,22 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
       title: 'Portfolio Designer',
       category: 'Site Vitrine',
       stack: ['Vue.js', 'Nuxt', 'Tailwind'],
-      image: 'https://source.unsplash.com/400x300/?design',
-      link: 'https://example.com'
+      image: '/images/portofolio.PNG',
+      link: 'https://portofolio-mkj.vercel.app/'
     },
     {
       title: 'Task Management App',
       category: 'Application Web',
       stack: ['React', 'Firebase'],
-      image: 'https://source.unsplash.com/400x300/?tasks',
-      link: 'https://example.com'
+      image: '/images/miva.PNG',
+      link: 'https://mivatakatishagroup.vercel.app/'
+    },
+    {
+      title: 'Task Management App',
+      category: 'Application Web',
+      stack: ['React', 'Firebase'],
+      image: '/images/lacasa.PNG',
+      link: 'https://lacasa-eta.vercel.app/'
     }
   ];
 
