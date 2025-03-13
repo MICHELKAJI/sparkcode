@@ -1,13 +1,13 @@
 import { NgClass } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MenuModaleComponent } from '../menu-modale/menu-modale.component';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ NgClass, RouterLink, MenuModaleComponent],
+  imports: [ NgClass, RouterLink, MenuModaleComponent, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

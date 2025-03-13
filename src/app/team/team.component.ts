@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef, Renderer2 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -7,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [],
+  imports: [ RouterLink],
   templateUrl: './team.component.html',
   styleUrl: './team.component.css'
 })

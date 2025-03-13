@@ -15,22 +15,22 @@ export class SectionServiceComponent implements OnInit, AfterViewInit {
     {
       title: 'Marketing Digital',
       detail: 'Boostez votre visibilité grâce à des stratégies marketing innovantes et ciblées.',
-      image: 'https://cdn-icons-png.flaticon.com/512/5696/5696935.png'
+      image: '/images/marketing.jpg'
     },
     {
       title: 'Web Design',
       detail: 'Créez des interfaces intuitives et modernes adaptées à tous vos besoins.',
-      image: 'https://cdn-icons-png.flaticon.com/512/2922/2922017.png'
+      image: '/images/webdesign.jpg'
     },
     {
       title: 'Développement Web',
       detail: 'Développez des applications web performantes et sécurisées sur mesure.',
-      image: 'https://cdn-icons-png.flaticon.com/512/919/919827.png'
+      image: '/images/devsoftware.jpg'
     },
     {
       title: 'Développement Android',
       detail: 'Créez des applications mobiles Android efficaces et adaptées à votre audience.',
-      image: 'https://cdn-icons-png.flaticon.com/512/888/888839.png'
+      image: '/images/mobilesoftware.jpg'
     }
   ];
 

@@ -4,10 +4,10 @@
       <div class="h-20 w-20"><img src="/images/mk_logo.png" alt=""></div>
       <nav>
         <ul class=" flex flex-row gap-10">
-          <li routerLink="" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Home</li>
-          <li routerLink="work" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Projets</li>
-          <li routerLink="service" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Service</li>
-          <li routerLink="team" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
+          <li routerLinkActive="font-extrabold" [routerLinkActiveOptions]="{ exact: true }" routerLink="" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Home</li>
+          <li routerLinkActive="font-extrabold" routerLink="work" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Projets</li>
+          <li routerLinkActive="font-extrabold" routerLink="service" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Service</li>
+          <li routerLinkActive="font-extrabold" routerLink="team" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
         </ul>
       </nav>
       <button class=" border border-white rounded-full py-2 px-5 text-slate-100">Get in touch</button>
