@@ -3,6 +3,7 @@ import { ServiceSectionPageLandingComponent } from '../service-section-page-land
 import { SectionServiceComponent } from '../section-service/section-service.component';
 import { FooterComponent } from '../footer/footer.component';
 
+
 @Component({
   selector: 'app-landing-page-service',
   standalone: true,
