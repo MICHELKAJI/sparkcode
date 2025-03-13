@@ -12,44 +12,44 @@ import { gsap } from 'gsap';
 export class SectionProjectComponent implements OnInit, AfterViewInit {
   projects = [
     {
-      title: 'Landing Page AI',
+      title: 'Landing Page Charity',
       category: 'Site Vitrine',
-      stack: ['Next.js', 'Tailwind', 'GSAP'],
+      stack: ['Angular', 'Tailwind', 'GSAP', 'Express', 'prisma', 'PostgreSQL'],
       image: '/images/apeh.PNG',
-      link: 'https://example.com'
+      link: 'https://apeh.vercel.app/'
     },
     {
       title: 'E-commerce Platform',
       category: 'Application Web',
-      stack: ['React', 'Node.js', 'MongoDB'],
+      stack: ['Vanila js', 'Node.js', 'MongoDB'],
       image: '/images/style.PNG',
       link: 'https://shope-theta.vercel.app/index.html'
     },
     {
       title: 'SaaS CRM',
       category: 'SaaS',
-      stack: ['Angular', 'NestJS', 'PostgreSQL'],
-      image: 'https://source.unsplash.com/400x300/?saas',
+      stack: ['Next.js', 'Express', 'PostgreSQL', 'prisma', 'clerk'],
+      image: '/images/saas.jpg',
       link: 'https://example.com'
     },
     {
       title: 'Portfolio Designer',
       category: 'Site Vitrine',
-      stack: ['Vue.js', 'Nuxt', 'Tailwind'],
+      stack: ['React', 'Motion', 'Tailwind'],
       image: '/images/portofolio.PNG',
       link: 'https://portofolio-mkj.vercel.app/'
     },
     {
       title: 'Task Management App',
       category: 'Application Web',
-      stack: ['React', 'Firebase'],
+      stack: ['React', 'Tailwind', 'Gesap'],
       image: '/images/miva.PNG',
       link: 'https://mivatakatishagroup.vercel.app/'
     },
     {
       title: 'Task Management App',
       category: 'Application Web',
-      stack: ['React', 'Firebase'],
+      stack: ['React', ''],
       image: '/images/lacasa.PNG',
       link: 'https://lacasa-eta.vercel.app/'
     }

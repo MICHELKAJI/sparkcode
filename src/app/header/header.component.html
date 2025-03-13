@@ -1,6 +1,6 @@
 <div>
 <header class="fixed  w-full items-center z-50 hidden md:block">
-    <div  [ngClass]="isScrolled? 'flex flex-row justify-between items-center px-20 py-5 bg-[#0D0F10]' : 'flex flex-row justify-between items-center px-20 py-5' ">
+    <div  [ngClass]="isScrolled? 'flex flex-row justify-between items-center px-20 py-3 bg-[#0D0F10]' : 'flex flex-row justify-between items-center px-20 py-5' ">
       <div class="h-16 w-16"><img src="/images/mk_logo.png" alt=""></div>
       <nav>
         <ul class=" flex flex-row gap-10">
@@ -10,7 +10,7 @@
           <li routerLink="team" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
         </ul>
       </nav>
-      <button class=" border border-white rounded py-2 px-5 text-slate-100">Get in touch</button>
+      <button class=" border border-white rounded-full py-2 px-5 text-slate-100">Get in touch</button>
     </div>
   </header>
   <div [ngClass]="isScrolled ? 'fixed block md:hidden w-full shadow-2xl bg-[#0D0F10] transition duration-300 z-50': 'fixed block bg-opacity-20 md:hidden w-full z-50 ' ">
