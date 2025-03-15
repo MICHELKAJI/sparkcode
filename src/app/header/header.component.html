@@ -10,7 +10,10 @@
           <li routerLinkActive="font-extrabold" routerLink="team" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
         </ul>
       </nav>
-      <button class=" border border-white rounded-full py-2 px-5 text-slate-100">Get in touch</button>
+      <button class="relative overflow-hidden border border-green-500 rounded-full px-8 py-2 text-white bg-[#0D1410] group">
+        <span class="relative z-10">Get in touch</span>
+        <span class="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-green-500 animate-borderSpin"></span>
+      </button>
     </div>
   </header>
   <div [ngClass]="isScrolled ? 'fixed block md:hidden w-full shadow-2xl  bg-[#0D0F10] transition duration-300 z-50': 'fixed block bg-opacity-20 md:hidden w-full z-50 ' ">
