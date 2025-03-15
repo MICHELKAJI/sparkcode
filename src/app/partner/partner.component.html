@@ -1,0 +1,14 @@
+<div class="relative w-full overflow-hidden bg-gray-900 py-8">
+    <h2 class="text-center text-3xl font-bold text-green-400 mb-8">
+      Nos Clients
+    </h2>
+    
+    <div class="relative w-full h-20">
+      <div #scrollContainer class="absolute flex gap-5 whitespace-nowrap">
+        <div *ngFor="let client of clients" class="flex items-center justify-center px-8 py-2 bg-gray-800 rounded-2xl shadow-lg border border-green-500 hover:scale-105 transition-transform cursor-pointer">
+          <span class="text-lg italic text-gray-300 font-medium">{{ client }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
