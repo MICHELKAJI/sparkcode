@@ -13,7 +13,7 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
   projects = [
     {
       title: 'Landing Page Charity',
-      category: 'Site Vitrine',
+      category: 'Showcase Site',
       stack: ['Angular', 'Tailwind', 'GSAP', 'Express', 'prisma', 'PostgreSQL'],
       image: '/images/apeh.PNG',
       link: 'https://apeh.vercel.app/'
@@ -34,29 +34,29 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Portfolio Designer',
-      category: 'Site Vitrine',
+      category: 'Showcase Site',
       stack: ['React', 'Motion', 'Tailwind'],
       image: '/images/portofolio.PNG',
       link: 'https://portofolio-mkj.vercel.app/'
     },
     {
       title: 'Task Management App',
-      category: 'Application Web',
+      category: 'Web Application',
       stack: ['React', 'Tailwind', 'Gesap'],
       image: '/images/miva.PNG',
       link: 'https://mivatakatishagroup.vercel.app/'
     },
     {
-      title: 'Task Management App',
-      category: 'Application Web',
-      stack: ['React', ''],
+      title: 'Real estate agency',
+      category: 'Web Application',
+      stack: ['React', 'Motion','Tailwind','ExpressJs', 'postgreSql', 'Prisma', 'JWT'],
       image: '/images/lacasa.PNG',
       link: 'https://lacasa-eta.vercel.app/'
     }
   ];
 
   filteredProjects = [...this.projects];
-  activeFilter = 'Tous';
+  activeFilter = 'All';
 
   constructor() {}
 
@@ -68,7 +68,7 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
 
   filterProjects(category: string): void {
     this.activeFilter = category;
-    this.filteredProjects = category === 'Tous' 
+    this.filteredProjects = category === 'All' 
       ? [...this.projects] 
       : this.projects.filter(p => p.category === category);
 

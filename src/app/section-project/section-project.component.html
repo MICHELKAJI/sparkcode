@@ -2,13 +2,13 @@
   
     <!-- Main Title -->
     <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">
-      Mon <span class="text-green-400">Portfolio</span>
+      Our <span class="text-green-400">Portfolio</span>
     </h1>
   
     <!-- Filter Buttons -->
     <div class="flex flex-wrap justify-center gap-4 mb-12">
       <button
-        *ngFor="let category of ['Tous', 'Site Vitrine', 'Application Web', 'SaaS']"
+        *ngFor="let category of ['All', 'Showcase Site', 'Web Application', 'SaaS']"
         (click)="filterProjects(category)"
         [class.bg-green-600]="activeFilter === category"
         class="px-4 py-2 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition"
@@ -39,7 +39,7 @@
           target="_blank" 
           class="inline-flex items-center px-4 py-2 bg-green-500 text-black font-medium rounded-lg shadow-lg hover:bg-green-400 transition"
         >
-          Voir le site →
+        See the site →
         </a>
       </div>
   

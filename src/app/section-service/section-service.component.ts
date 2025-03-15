@@ -13,23 +13,23 @@ export class SectionServiceComponent implements OnInit, AfterViewInit {
   
   services = [
     {
-      title: 'Marketing Digital',
-      detail: 'Boostez votre visibilité grâce à des stratégies marketing innovantes et ciblées.',
+      title: 'Digital Marketing',
+      detail: 'Boost your visibility with innovative and targeted marketing strategies.',
       image: '/images/marketing.jpg'
     },
     {
       title: 'Web Design',
-      detail: 'Créez des interfaces intuitives et modernes adaptées à tous vos besoins.',
+      detail: 'Create intuitive and modern interfaces adapted to all your needs.',
       image: '/images/webdesign.jpg'
     },
     {
-      title: 'Développement Web',
-      detail: 'Développez des applications web performantes et sécurisées sur mesure.',
+      title: 'Web Development',
+      detail: 'Develop high-performance and secure custom web applications.',
       image: '/images/devsoftware.jpg'
     },
     {
-      title: 'Développement Android',
-      detail: 'Créez des applications mobiles Android efficaces et adaptées à votre audience.',
+      title: 'Mobile development',
+      detail: 'Create effective Android mobile apps tailored to your audience.',
       image: '/images/mobilesoftware.jpg'
     }
   ];
