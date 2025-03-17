@@ -12,6 +12,13 @@ import { gsap } from 'gsap';
 export class SectionProjectComponent implements OnInit, AfterViewInit {
   projects = [
     {
+      title: 'Landing Page Kivu Brand',
+      category: 'Showcase Site',
+      stack: ['React', 'Motion','Tailwind','ExpressJs', 'postgreSql', 'Prisma', 'JWT'],
+      image: '/images/kivuPNG.PNG',
+      link: 'https://kivubrand.com/'
+    },
+    {
       title: 'Landing Page Charity',
       category: 'Showcase Site',
       stack: ['Angular', 'Tailwind', 'GSAP', 'Express', 'prisma', 'PostgreSQL'],
@@ -40,7 +47,7 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
       link: 'https://portofolio-mkj.vercel.app/'
     },
     {
-      title: 'Task Management App',
+      title: 'Landing page for Cleaning service',
       category: 'Web Application',
       stack: ['React', 'Tailwind', 'Gesap'],
       image: '/images/miva.PNG',
@@ -52,7 +59,7 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
       stack: ['React', 'Motion','Tailwind','ExpressJs', 'postgreSql', 'Prisma', 'JWT'],
       image: '/images/lacasa.PNG',
       link: 'https://lacasa-eta.vercel.app/'
-    }
+    },
   ];
 
   filteredProjects = [...this.projects];

@@ -14,33 +14,33 @@ export class PartnerComponent implements AfterViewInit {
 
   clients: string[] = [
     'Lacasa',
-    'Mk2Business',
-    'MivaTakatisha',
-    'Nad Haire',
     'KivuExpress',
-    'AlphaDesign',
-    'NextWave',
-    'EcoSolutions',
-    'FutureCorp',
-    'CyberLink'
+    'Nad Luxe',
+    'Miva Takatisha',
+    'Kivu Brand',
+    'Lacasa',
+    'KivuExpress',
+    'Nad Luxe',
+    'Miva Takatisha',
+    'Kivu Brand'
   ];
 
   ngAfterViewInit(): void {
-    this.startScrolling();
+    this.startInfiniteScroll();
   }
 
-  startScrolling() {
+  startInfiniteScroll() {
     const container = this.scrollContainer.nativeElement;
-    const width = container.scrollWidth;
+    const itemWidth = container.scrollWidth / 2; // moitié car liste doublée
 
-    gsap.fromTo(container, 
-      { x: 0 }, 
-      {
-        x: -width,
-        duration: 30,
-        ease: 'linear',
-        repeat: -1
+    gsap.to(container, {
+      x: -itemWidth,
+      duration: 20, // ajuste la vitesse (plus bas = plus rapide)
+      ease: 'linear',
+      repeat: -1,
+      modifiers: {
+        x: gsap.utils.unitize((x) => parseFloat(x) % itemWidth)
       }
-    );
+    });
   }
 }
