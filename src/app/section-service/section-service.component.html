@@ -34,7 +34,7 @@
   
         <p class="text-gray-400 mb-8">{{ selectedService.detail }}</p>
   
-        <button
+        <button (click)="modale.showModal()" 
           class="bg-white text-black px-6 py-3 rounded-lg shadow-lg hover:bg-green-400 transition"
         >
         Contact us →
@@ -50,5 +50,6 @@
         />
       </div>
     </div>
+    <app-contact #modale/>
   </div>
   

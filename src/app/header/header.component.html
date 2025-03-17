@@ -11,7 +11,7 @@
         </ul>
       </nav>
       <button class="relative overflow-hidden border border-green-500 rounded-full px-8 py-2 text-white bg-[#0D1410] group">
-        <span class="relative z-10">Get in touch</span>
+        <span (click)="modalecontact.showModal()" class="relative z-10">Get in touch</span>
         <span class="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-green-500 animate-borderSpin"></span>
       </button>
     </div>
@@ -19,8 +19,9 @@
   <div [ngClass]="isScrolled ? 'fixed block md:hidden w-full shadow-2xl  bg-[#0D0F10] transition duration-300 z-50': 'fixed block bg-opacity-20 md:hidden w-full z-50 ' ">
     <div class=" flex flex-row justify-between items-center">
         <div><img  class=" h-16 w-16 rounded-full" src="/images/mk_logo.png" alt="logo"></div>
-        <div class="px-3"><img (click)="modale.showModal()"  class=" h-10 w-10" src="images/Menu.png" alt=""></div>
+        <div class="px-3"><img (click)="modale.showModal()"  class=" h-8 w-8" src="images/Menu.png" alt=""></div>
     </div>
  </div>
  <app-menu-modale #modale/>
+ <app-contact #modalecontact/>
 </div>
