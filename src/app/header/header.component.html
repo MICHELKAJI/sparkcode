@@ -1,13 +1,13 @@
 <div>
 <header class="fixed  w-full items-center z-50 hidden md:block">
     <div  [ngClass]="isScrolled? 'flex flex-row justify-between items-center px-20 py-2 bg-[#0D0F10]' : 'flex flex-row justify-between items-center px-20 py-5' ">
-      <div class="h-20 w-20"><img src="/images/mk_logo.png" alt=""></div>
+      <div routerLink="" class="h-20 w-20 rounded-full"><img class="rounded-full h-20 w-20" src="/images/mk_logo.png" alt=""></div>
       <nav>
         <ul class=" flex flex-row gap-10">
-          <li routerLinkActive="font-extrabold" [routerLinkActiveOptions]="{ exact: true }" routerLink="" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Home</li>
-          <li routerLinkActive="font-extrabold" routerLink="work" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Projets</li>
-          <li routerLinkActive="font-extrabold" routerLink="service" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Service</li>
-          <li routerLinkActive="font-extrabold" routerLink="team" class="text-slate-200  p-2 hover:bg-green-400 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
+          <li routerLinkActive="font-extrabold" [routerLinkActiveOptions]="{ exact: true }" routerLink="" class="text-slate-200  p-2 hover:text-green-600 hover:rounded-full transition duration-300 cursor-pointer">Home</li>
+          <li routerLinkActive="font-extrabold" routerLink="work" class="text-slate-200  p-2 hover:text-green-600 hover:rounded-full transition duration-300 cursor-pointer">Projets</li>
+          <li routerLinkActive="font-extrabold" routerLink="service" class="text-slate-200  p-2 hover:text-green-600 hover:rounded-full transition duration-300 cursor-pointer">Service</li>
+          <li routerLinkActive="font-extrabold" routerLink="team" class="text-slate-200  p-2 hover:text-green-600 hover:rounded-full transition duration-300 cursor-pointer">Team</li>
         </ul>
       </nav>
       <button class="relative overflow-hidden border border-green-500 rounded-full px-8 py-2 text-white bg-[#0D1410] group">

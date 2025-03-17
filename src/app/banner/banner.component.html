@@ -13,7 +13,7 @@
   
     <!-- Bouton -->
     <div class="mb-10">
-      <button
+      <button (click)="modal.showModal()"
         class="bg-green-400 animate-buttons hover:bg-green-500 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500"
       >
         Book a call →
@@ -81,6 +81,7 @@
         </div>
       </div>
     </div>
+    <app-schedule #modal/>
   </section>
   
 
