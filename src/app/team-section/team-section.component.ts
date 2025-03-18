@@ -22,14 +22,14 @@ export class TeamSectionComponent implements OnInit, AfterViewInit {
     },
     {
       name: 'Michel Kaji',
-      title: 'Full stack',
-      stack: ['Node.js', 'Express', 'Prisma', 'Angular', 'Motion', 'Gsap', 'Next.js'],
+      title: 'Fullstack Web Developper',
+      stack: ['React','Tailwind', 'Express', 'Prisma', 'Angular', 'Motion', 'Gsap', 'Next.js'],
       photo: '/images/future.jpeg'
     },
     {
-      name: 'Merlin Unikho',
+      name: 'Merlin Kams',
       title: 'Fullstack Developer',
-      stack: ['PHP', 'Laravel', 'MySQL'],
+      stack: ['PHP', 'Laravel', 'MySQL','Nginx', 'Apache'],
       photo: '/images/merlin.jpeg'
     },
     {

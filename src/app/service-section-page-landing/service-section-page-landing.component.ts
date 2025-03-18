@@ -1,5 +1,8 @@
 import { Component, AfterViewInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 
 @Component({
@@ -77,6 +80,16 @@ export class ServiceSectionPageLandingComponent implements AfterViewInit {
         drop.x = Math.random() * this.canvas.width;
       }
     }
+  }
+  scrollTo(targetId: string) {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: {
+        y: `#${targetId}`,
+        offsetY: 80 // ajuste si t'as une navbar
+      },
+      ease: 'power2.inOut'
+    });
   }
 
 }

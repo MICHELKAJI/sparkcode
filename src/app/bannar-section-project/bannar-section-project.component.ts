@@ -1,6 +1,9 @@
 import { NgFor } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 @Component({
   selector: 'app-bannar-section-project',
@@ -17,7 +20,14 @@ export class BannarSectionProjectComponent implements AfterViewInit{
     gsap.from('.animate-buttons', { opacity: 0, y: 20, duration: 1, delay: 1 });
     gsap.from('.schema-options div', { opacity: 0, scale: 0.8, stagger: 0.2, delay: 1.5 });
   }
-
-  
-
+  scrollTo(targetId: string) {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: {
+        y: `#${targetId}`,
+        offsetY: 80 // ajuste si t'as une navbar
+      },
+      ease: 'power2.inOut'
+    });
+  }
 }
