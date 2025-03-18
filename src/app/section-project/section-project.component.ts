@@ -49,7 +49,7 @@ export class SectionProjectComponent implements OnInit, AfterViewInit {
     {
       title: 'Landing page for Cleaning service',
       category: 'Web Application',
-      stack: ['React', 'Tailwind', 'Gesap'],
+      stack: ['React', 'Tailwind', 'Gsap'],
       image: '/images/miva.PNG',
       link: 'https://mivatakatishagroup.vercel.app/'
     },
